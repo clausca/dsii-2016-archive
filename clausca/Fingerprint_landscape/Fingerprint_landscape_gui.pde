@@ -16,6 +16,8 @@
 // keys:
 // [mouse LEFT/RIGHT] ... rotates camera
 // [mouse UP/DOWN] ...... zooms out/in
+// key [a] ... rotate +
+// key [d] ... rotate -
 // Key [r] ... export .OBJ
 // key [s] ... save frame 
 // —
