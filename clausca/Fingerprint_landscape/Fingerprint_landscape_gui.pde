@@ -61,6 +61,7 @@ float rotationY = 0;
 float rotationX = 0;
 float rotationZ = 0;
 float hgt=0;
+float angle = 0;
 
 float increment = 0.02;
 float zoff = 0.0;  
@@ -157,8 +158,14 @@ void draw() {
   }
 
   pushMatrix();
-
   translate(width/2, height/2, mouseY); 
+  rotateY(angle);
+
+    if (keyPressed) {
+      if (key == 'a' || key == 'A') angle -= PI/100;
+      if (key == 'd' || key == 'D') angle += PI/100;
+    }
+    
   if (toggle2==true) {   //stop the rotation over X, Y, Z axis
     rotateY(rotationY);
     rotateX(rotationX);
